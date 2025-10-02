@@ -1,0 +1,4 @@
+Bem-vindo ao jogo Aventura no Labirinto!
+Use as setas do teclado para se mover.
+Colete os itens e chegue ao final.
+Boa sorte!
