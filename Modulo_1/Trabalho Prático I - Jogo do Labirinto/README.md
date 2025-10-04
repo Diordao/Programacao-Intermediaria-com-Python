@@ -1,1 +1,0 @@
-# Aventura no Labirinto\n\n## Como jogar\n1. python3 -m venv venv\n2. source venv/bin/activate\n3. pip install -r requirements.txt\n4. python3 main.py --name 'SeuNome'\n
