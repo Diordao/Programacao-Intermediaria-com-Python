@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Microblog</title>
+    <style>
+        body { font-family: Arial; margin: 40px; background: #f3f3f3; }
+        a { margin: 5px; text-decoration: none; color: #3366cc; }
+        img { border-radius: 10px; width: 100px; }
+    </style>
+</head>
+<body>
+    <div>
+        Microblog:
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/cadastro">Cadastro</a>
+        <a href="/post">Escrever Post</a>
+        <a href="/logout">Logout</a>
+    </div>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+{% if user %}
+    <h2>Bem-vindo, {{ user.username }}!</h2>
+    {% if user.photo %}
+        <img src="{{ user.photo }}" alt="foto de perfil"><br>
+    {% endif %}
+    <p>{{ user.bio }}</p>
+    <h3>Últimos posts:</h3>
+    {% if posts %}
+        {% for post in posts %}
+            <p><b>{{ post.author.username }}:</b> {{ post.body }}</p>
+        {% endfor %}
+    {% else %}
+        <p>Nenhum post ainda!</p>
+    {% endif %}
+{% else %}
+    <p>Você precisa fazer login!</p>
+{% endif %}
+{% endblock %}
