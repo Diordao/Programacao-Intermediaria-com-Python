@@ -1,0 +1,25 @@
+# Microblog - Entrega
+
+## O que é
+Microblog simples em Flask com cadastro, login (Flask-Login) e posts (Flask-SQLAlchemy).
+
+## Como executar (Ubuntu)
+1. python3 -m venv flask_env
+2. source flask_env/bin/activate
+3. pip install -r requirements.txt   # (ou pip install flask flask_sqlalchemy flask_login)
+4. flask run
+5. Abrir http://127.0.0.1:5000
+
+## O que foi implementado
+- Cadastro de usuário (username, password, photo, bio)
+- Login / Logout via Flask-Login
+- Criar post (associado ao usuário)
+- Visualizar timeline com posts recentes
+
+## Arquivos
+- microblog.py
+- app/__init__.py
+- app/models/models.py
+- app/alquimias.py
+- app/routes.py
+- app/templates/*
